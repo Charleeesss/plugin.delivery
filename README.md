@@ -379,6 +379,10 @@ bun dev
 
 ### Step-by-Step Workflow
 
+> ⚠️ **CRITICAL:** You MUST create both files or the build will fail:
+> 1. `src/[plugin-name].json` - Plugin definition
+> 2. `locales/[plugin-name].en-US.json` - Locale file (**REQUIRED**)
+
 1. **Create plugin definition** in `src/[plugin-name].json`:
 
 ```json
@@ -399,7 +403,19 @@ bun dev
 }
 ```
 
-2. **Create manifest** in `public/[plugin-name]/manifest.json`:
+2. **Create locale file** in `locales/[plugin-name].en-US.json` (**REQUIRED**):
+
+```json
+{
+  "meta": {
+    "title": "My Plugin",
+    "description": "What your plugin does",
+    "tags": ["tag1", "tag2"]
+  }
+}
+```
+
+3. **Create manifest** in `public/[plugin-name]/manifest.json`:
 
 ```json
 {
@@ -428,29 +444,42 @@ bun dev
 }
 ```
 
-3. **Create API endpoints** in `api/[plugin-name]/[endpoint].ts`
+4. **Create API endpoints** in `api/[plugin-name]/[endpoint].ts`
 
-4. **Run format** (generates i18n translations for 18 languages):
+5. **⚠️ REQUIRED: Create locale file** `locales/[plugin-name].en-US.json`:
+
+```json
+{
+  "meta": {
+    "title": "Your Plugin Title",
+    "description": "Your plugin description",
+    "tags": ["your", "tags"]
+  }
+}
+```
+
+> **BUILD WILL FAIL** without this file. Copy `title`, `description`, and `tags` from your plugin's `meta` object.
+
+6. **Run format** (generates i18n translations for 18 languages):
 
 ```bash
 # Set OpenAI API key (required for i18n generation)
 export OPENAI_API_KEY=sk-your-key-here
-# Or create .env file with OPENAI_API_KEY=sk-your-key-here
 
-# Generate translations
+# Generate translations (creates all locale files from en-US)
 bun run format
 ```
 
-5. **Build** the plugin index:
+7. **Build** the plugin index:
 
 ```bash
 bun run build
 ```
 
-6. **Commit and push**:
+8. **Commit and push**:
 
 ```bash
-git add -A
+git add src/[plugin-name].json locales/[plugin-name].*.json
 git commit -m "feat: add [plugin-name] plugin"
 git push
 ```

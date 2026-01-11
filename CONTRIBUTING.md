@@ -2,6 +2,28 @@
 
 Thank you for your interest in contributing to the SperaxOS Plugin Delivery ecosystem! This guide will help you get started.
 
+---
+
+## ⚠️ Adding a Plugin? Read This First!
+
+**Every plugin requires TWO files or the build will fail:**
+
+| File | Location | Required |
+|------|----------|----------|
+| Plugin definition | `src/your-plugin.json` | ✅ Yes |
+| Locale file | `locales/your-plugin.en-US.json` | ✅ Yes |
+
+Then run:
+```bash
+export OPENAI_API_KEY=your-key
+bun run format   # Generates all locale translations
+bun run build    # Verify it works
+```
+
+See [Submitting a Plugin](#submitting-a-plugin) for full details.
+
+---
+
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)

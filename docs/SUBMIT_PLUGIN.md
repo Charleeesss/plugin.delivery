@@ -2,6 +2,19 @@
 
 This guide explains how to list your plugin in the SperaxOS Plugin Marketplace so it can be discovered and used by the community.
 
+---
+
+## ⚠️ CRITICAL: Required Files
+
+> **BUILD WILL FAIL** if you don't create both files:
+>
+> 1. `src/your-plugin.json` - Plugin definition
+> 2. `locales/your-plugin.en-US.json` - **REQUIRED** locale file
+>
+> Then run `bun run format` to auto-generate other locales.
+
+---
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -172,7 +185,9 @@ touch src/your-plugin.json
 
 Add your plugin definition (see [Plugin Entry Format](#plugin-entry-format)).
 
-### Step 3: Create Locale File
+### Step 3: Create Locale File (REQUIRED - BUILD WILL FAIL WITHOUT THIS)
+
+⚠️ **This step is mandatory. The build breaks without the locale file.**
 
 Create the required English locale file:
 
@@ -180,7 +195,7 @@ Create the required English locale file:
 touch locales/your-plugin.en-US.json
 ```
 
-Add your locale content:
+Add your locale content (copy `title`, `description`, `tags` from your plugin's `meta`):
 
 ```json
 {
@@ -192,28 +207,36 @@ Add your locale content:
 }
 ```
 
-### Step 4: Validate Your Submission
+### Step 4: Generate Other Locales
+
+Run the format command to auto-generate all other language translations:
 
 ```bash
-# Install dependencies
-pnpm install
+# Set your OpenAI API key
+export OPENAI_API_KEY="your-key-here"
 
-# Run validation
-pnpm run check
-
-# Build the index (optional, to test)
-pnpm run build
+# Generate all locale files
+bun run format
 ```
 
-### Step 5: Commit and Push
+This will create `your-plugin.ar.json`, `your-plugin.zh-CN.json`, etc.
+
+### Step 5: Validate Your Submission
 
 ```bash
-git add src/your-plugin.json locales/your-plugin.en-US.json
+# Build the index to verify everything works
+bun run build
+```
+
+### Step 6: Commit and Push
+
+```bash
+git add src/your-plugin.json locales/your-plugin.*.json
 git commit -m "feat: add your-plugin to marketplace"
 git push origin main
 ```
 
-### Step 6: Open Pull Request
+### Step 7: Open Pull Request
 
 1. Go to [github.com/nirholas/plugin.delivery](https://github.com/nirholas/plugin.delivery)
 2. Click "Compare & pull request"

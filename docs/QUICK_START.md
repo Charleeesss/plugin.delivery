@@ -214,6 +214,7 @@ After deployment, update `manifest.json` with production URLs:
 ### Option B: Submit via Pull Request
 
 1. Fork [github.com/nirholas/plugins](https://github.com/nirholas/plugin.delivery)
+
 2. Add your plugin to `src/my-plugin.json`:
 
 ```json
@@ -232,7 +233,21 @@ After deployment, update `manifest.json` with production URLs:
 }
 ```
 
-3. Submit PR
+3. **⚠️ REQUIRED: Create locale file** `locales/my-plugin.en-US.json`:
+
+```json
+{
+  "meta": {
+    "title": "My Plugin",
+    "description": "What it does",
+    "tags": ["utility"]
+  }
+}
+```
+
+4. Run `bun run format` to generate all translations (requires `OPENAI_API_KEY`)
+
+5. Submit PR with both `src/my-plugin.json` and `locales/my-plugin.*.json` files
 
 ---
 
