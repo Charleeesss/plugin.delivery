@@ -14,7 +14,7 @@
 
 ---
 
-## What Is Plugin Delivery?
+## What Is Plugin Delivery? 
 
 The **official plugin marketplace and SDK** for SperaxOS — a crypto/DeFi-focused AI assistant platform.
 
